@@ -549,7 +549,6 @@ namespace DancingLineFanmade.Level
             if (debug)
             {
                 UnityGUINamespace.Label(new Rect(10, 10, 120, 50), "FPS：" + finalFps, style);
-                UnityGUINamespace.Label(new Rect(10, 40, 120, 50), "关卡进度：" + Math.Round(AudioManager.Progress * 100f) + "%（" + Math.Round(AudioManager.Progress * Player.Instance.levelData.levelTotalTime) + "秒/" + (Player.Instance.levelData.useCustomLevelTime ? Player.Instance.levelData.levelTotalTime : Player.Instance.SoundTrack.clip.length) + "秒）", style);
                 UnityGUINamespace.Label(new Rect(10, 70, 120, 50), "游戏状态：" + LevelManager.GameState, style);
                 UnityGUINamespace.Label(new Rect(10, 100, 120, 50), "线的坐标：" + selfTransform.localPosition, style);
                 UnityGUINamespace.Label(new Rect(10, 130, 120, 50), "线的朝向：" + selfTransform.localEulerAngles, style);
